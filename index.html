@@ -1,0 +1,173 @@
+<!-- 
+  Quiz 8:
+  
+  Recreate the "SignUp Form" of a well-known company (preferably in tech), without
+  peeking into their code. There are a number of considerations here, so please
+  continue reading the instructions carefully to avoid any mistakes. Here, we ask you
+  to recreate the form, so your page won't have to look exactly like the original
+  page, but you intend to have the same fields.
+
+  The form needs at least 5 fields with at least 3 different input types (like passwords, dates, text, email, numbers, etc.)
+
+  Add a link to the original page with the text "Original Page".
+
+  You CANNOT copy ANY code (HTML, CSS, or Javascript) from any sources! All of the submitted code should
+  be written by you.
+
+  You will assessed based on the quality of the form (proper placeholder, type, autocomplete, etc.).
+
+
+  "Original Page"
+  https://www.instagram.com/accounts/emailsignup/?hl=en
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quiz 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <!-- container -->
+     <div class="container">
+      <form id= "form" class="form">
+        <div class="logo">
+          <a href="https://www.instagram.com/accounts/emailsignup/?hl=en">          <img
+            src="./instagram.png"
+            alt="the website form I choose is from instagram"
+            style="width: 175px"
+          /> </a>
+
+        </div>
+          <!-- form -->
+            <!-- Log In through parent company Facebook  -->
+            <p class="intro-header">
+              Sign up to see photos and videos from your friends.
+            </p>
+            <div class="altbtn">
+              <a href="https://www.facebook.com/">
+                <!-- I made this logo since I couldn't find it anywhere online in these colors-->
+                <img
+                  height="15px"
+                  src="./img/homemade_facebook_logo.png"
+                  alt="myAttemptAtThelogo-sorryzuck"
+                />
+                Log In With Facebook</a
+              >
+            </div>
+            <div class="or">
+              <div class="line"></div>
+              <p>OR</p>
+              <div class="line"></div>
+            </div>
+            <!-- number or email field -->
+            <div class="input_field">
+              <input
+                type="email"
+                placeholder="Mobile Number or Email"
+                id="email"
+              /> 
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+
+            <!-- Full name field -->
+            <div class="input_field">
+              <input type="text" placeholder="Full Name" id="fullname"/>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+
+            <!-- Username field -->
+            <div class="input_field">
+              <input type="text" placeholder="Username" id="username"/>
+            <!-- validation -->
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input_field">
+              <input type="password" placeholder="Password"
+              id="password"/>
+            <!-- validation -->
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+            </div>
+            <!-- Password 2 Field -->
+            <!-- not part of the original site but I couldn't find sites I liked that had more than 4 fields -->
+            <div class="input_field">
+              <input type="password" placeholder="Please Re-Enter The Password"
+              id="password2"/>
+            <!-- validation -->
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+            </div>
+            <!-- homemade button maybe if I had more time -->
+            
+            <!-- <div class="btn"><a href="#">Sign Up</a></div> -->
+
+            <!-- regular boring button -->
+            <button type='submit'>Sign Up</button>
+            <!-- Disclaimer -->
+            <p class="signup-disclaimer">
+              By signing up, you agree to our <a href="#">Terms</a>,
+              <a href="#">Data Policy</a>, and <a href="#">Cookies Policy</a>.
+            </p>
+        </form>
+
+
+        <!--*******************************************************************************************************-->
+        <!-- Log In through parent company Facebook  -->
+        <div class="box-2-flex-experiment">
+        <div class="box2">
+          <p>Have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+        <!-- get the app -->
+        <div class="mobile-alternatives">
+          <p>Get the app.</p>
+          <div class="icons">
+            <a href="#"><img src="./img/myMoneyPit_logo.png" alt="appstore" /></a>
+            <a href="#"><img src="./img/googleplay_logo.png" alt="googleplay" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Top Accounts</a></li>
+            <li><a href="#">Hashtags</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+        <div class="parentalCorpCopyright">© 2021 Instagram From Facebook</div>
+      </div>
+    </div>
+    <!-- Script Magic -->
+    <script src="./script.js"></script>
+  </body>
+  </body>
+</html>

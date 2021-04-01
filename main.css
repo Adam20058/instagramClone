@@ -1,0 +1,282 @@
+/* ****************** Instagram color scheme ************************* */
+/* Background == #FAFAFA */
+/* Form == #fff */
+/* Font color == #000 */
+/* Footer font == #8e8e8e */
+
+/* ********************** Facebook color scheme************************* */
+ /*  logo == #1778F2  */
+ /* Font Color == #fff */
+
+/* ***************** Dynamic colors ************************************ */
+:root {
+  --success-color:#2ecc71;
+  --error-color: #e74c3c;
+}
+/* ******************************************************************** */
+
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   list-style: none;
+   text-decoration: none;
+   font-family: 'Work Sans', sans-serif;
+ }
+ 
+ body{
+   background: #fafafa;
+   font-size: 14px;
+ }
+ 
+ /* intro header */
+.intro-header {
+  text-align: center;
+  font-size: 16px;
+  color: #5e5d5d;
+  margin-bottom: 20px;
+}
+
+/* ************************************************** */
+ .container form{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  padding: 40px 40px 20px;
+ }
+ 
+ .logo img{
+   display: block;
+   margin: 0 auto 35px;
+ }
+ 
+ form .input_field{
+   margin-bottom: 5px;
+ }
+ 
+ /* Input field */
+ .input_field input{
+   width: 100%;
+   background: #fafafa;
+   border: 1px solid #efefef;
+   font-size: 12px;
+   border-radius: 3px;
+   color: #262626;
+   padding: 10px;
+   transition: all 0.5s;
+ }
+ 
+.input_field input:focus{
+   border: 1px solid #b2b2b2;
+ }
+ 
+ /* Sign Up Button */
+ 
+ button {
+   cursor: pointer;
+   color: white;
+   font-family: 'Work Sans', sans-serif;
+   background-color: #B2DFFB;
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+   height: 30px;
+   margin: 15px 0;
+ }
+
+ button:hover {
+   background-color: #3897f0;
+ }
+
+ button:focus {
+   outline: none;
+ }
+ 
+ /* Alt-signup through Facebook Button */
+ 
+ .altbtn{
+   margin: 10px 0;
+   background-color: #3897f0;
+     border: 1px solid #3897f0;
+     border-radius: 4px;
+     text-align: center;
+     padding: 5px;
+ }
+ 
+ .altbtn a{
+   color: #fff;
+   display: block;
+ }
+ 
+/* or line this was super annoying  */
+
+ .container form .or{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 15px;
+   margin: 15px 0 20px;
+ }
+ 
+ form .or .line{
+   width: 105px;
+   height: 2px;
+   background: #efefef
+ }
+ 
+ form .or p{
+   color: #999;
+   font-size: 12px;
+ }
+ 
+
+ /* Download button on diff platforms apple or android */
+
+ .container .mobile-alternatives{
+   text-align: center;
+   color: #262626;
+ }
+ 
+ .container .mobile-alternatives p{
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+ 
+ .container .mobile-alternatives a img{
+   width: 135px;
+   height: 40px;
+   margin: 0 5px;
+ }
+
+ /* Sign-Up Disclaimer */
+ .signup-disclaimer {
+   text-align: center;
+   font-size: 12px;
+   color: #8e8e8e;
+ }
+
+ .signup-disclaimer a {
+   text-decoration: none;
+   color: #595757;
+ }
+
+
+.box-2-flex-experiment {
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .box2{
+  background-color: white;
+  border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    /* text-align: center; */
+    padding: 5px;
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 p {
+  display: flex;
+  align-items: center;
+}
+
+.box2 p a {
+  text-decoration: none;
+  color: #3897f0;
+}
+
+ /* footer */
+ .footer{
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 40px 0;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .footer li{
+   display: inline-block;
+   margin-right: 10px;
+ }
+ 
+ .footer a{
+   font-size: 12px;
+   text-decoration: none;
+   color: #8e8e8e;	
+
+ }
+ 
+ .footer .parentalCorpCopyright{
+   color: #8e8e8e;	
+ }
+
+ /* Dynamic Fun */
+
+form .input_field .fa-check-circle {
+  position: relative;
+  top: -24px;
+  left: 220px;
+  visibility: hidden;
+}
+form .input_field .fa-exclamation-circle {
+  position: relative;
+  top: -24px;
+  left: 202px;
+  visibility: hidden;
+
+}
+
+.input_field small {
+  position: relative;
+  bottom: 0;
+  right: 37px; 
+  visibility: hidden;
+} */
+
+
+/* testing */
+label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* with success */
+.input_field.success input {
+  border-color: var(--success-color
+  );
+}
+
+.input_field.success .fa-check-circle {
+  color: var(--success-color);
+  visibility: visible;
+}
+
+/* with failure */
+.input_field.error input {
+  border-color: var(--error-color
+  );
+}
+
+.input_field.error .fa-exclamation-circle {
+  color: var(--error-color);
+  visibility: visible;
+}
+
+.input_field.error small {
+  visibility: visible;
+  color: var(--error-color);
+}
